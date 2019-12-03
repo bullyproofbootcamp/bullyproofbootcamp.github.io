@@ -24,7 +24,11 @@
 			</header>
 
 		<!-- Signup Form -->
-			<form name="signup-form" id="signup-form" method="POST" data-netlify="true">
+			<form name="signup-form" id="signup-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+				<div class="hidden">
+					<label>Do not complete this form field if you're a human!</label>
+					<input name="bot-field" />
+				</div>
 				<input type="email" name="email" id="email" placeholder="Your email address" />
 				<input type="submit" name="submit" value="Register your interest" />
 			</form>
